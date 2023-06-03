@@ -1,6 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer utilities {
+  .transform-origin-center-center {
+    transform-origin: center center;
+  }
+
+  .transition-stroke-dashoffset {
+    transition-property: stroke-dashoffset;
+  }
+
+  .aspect-85-100 {
+    aspect-ratio: 0.85 / 1;
+  }
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url("/Karla-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
